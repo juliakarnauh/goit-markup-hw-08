@@ -1,0 +1,45 @@
+.header__container{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--occasional-color);
+}
+.header__porfilio{
+    border: 1px solid var(--border-color);
+}
+.header__logo{
+    display: inline-block;
+font-family: 'Raleway';
+color: var(--accent-color);
+text-decoration:none;
+font-size: 26px;
+line-height: 1.2;
+margin-right: 93px;
+padding: 24px 0;
+}
+.header__list{
+    display: flex;
+    margin-left: auto;
+    gap:50px;
+}
+.header__link{
+    display:flex;
+    align-items: center; 
+    font-weight: 500;
+    font-size: 14px;
+line-height: 1.14;
+padding-top: 32px;
+padding-bottom: 32px;
+fill: var(--primary-text-color);
+color: var(--primary-text-color);
+transition: fill var(--transition-dir),
+color var(--transition-dir);
+
+&:hover,
+&:focus{
+    fill: var(--accent-color);
+    color: var(--accent-color);
+}
+}
+.header__icon{
+    margin-right: 10px;
+}

@@ -1,0 +1,36 @@
+.footer__icon{
+    margin-left: 70px;}
+.footer__icon__title{
+    font-family:inherit;
+font-weight: 700;
+font-size: 14px;
+line-height: 1.2;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--occasional-color);
+}
+.footer__icon__list{
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+.footer__icon__item{
+    height: 44px;
+    width: 44px;
+}
+.footer__icon__link{
+    display: flex;
+    justify-content: center;
+align-items: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    fill:var(--occasional-color);
+    transition: background-color var(--transition-dir);
+
+   &:hover,
+&:focus{
+    background-color: var(--accent-color);
+}
+}

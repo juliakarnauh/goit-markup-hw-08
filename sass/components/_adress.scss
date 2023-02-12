@@ -1,0 +1,23 @@
+.adress__location{
+    display: inline-block;
+    text-decoration:none;
+    font-style: normal;
+font-size: 14px;
+line-height: 24px;
+color:var(--occasional-color);
+margin-top: 20px;
+}
+.adress__link{
+    display: inline-block;
+    text-decoration:none;
+    font-style: normal;
+font-size: 14px;
+line-height: 1.7;
+color: rgba(255, 255, 255, 0.6);
+margin-top: 9px;
+transition: color var(--transition-dir);
+}
+.adress__link:hover,
+.adress__link:focus{
+    color:var(--accent-color);
+}
