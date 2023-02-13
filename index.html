@@ -12,7 +12,7 @@
 <link rel="stylesheet" href="./css/main.min.css" />
 </head>
 <body>
-    
+   
         <header class="header">
             <div class="container header__container">
                 <a class="header__logo logo" href="./index.html">Web<span class="logo__studio">Studio</span></a>
@@ -29,12 +29,18 @@
                     <li class="header__item">
                     <a class="header__link items" href="tel:380961111111"><svg class="header__icon" width="10" height="16"><use href="./images/icons.svg#vector"></use></svg>+38 096 111 11 11</a></li>
                     </ul>
-        </div>
+                    <button class="header__menu-btn" aria-expanded="false"
+                    aria-controls="menu-container" js-open-menu>
+                      <svg class="header__menu-icon" width="40" height="40">
+                        <use href="./images/icons.svg#menu-icon"></use>
+                      </svg>
+                    </button>
+                  </div> 
         </header>
    
     
 <main class="main">
-        <section class="hero">
+      <section class="hero">
             <div class="container hero__container">
             <h1 class="hero__title">Ефективні рішення для<br> вашого бізнесу</h1>
             <button type="button" class="hero__button button" data-modal-open><span class="service" >Замовити послугу</span></button>
@@ -100,13 +106,41 @@
 </li>
 </ul>
 </div>
-    </section>
+    </section> 
     <section class="workers section">
         <div class="container workers__container">
         <h2 class="workers__title">Наша команда</h2>
         <ul class="workers__list">
-            <li class="workers__item">
-        <img src="./images/img.jpg" alt="Працівник" width="270" height="260">
+            <li class="workers__item"> 
+               <picture> 
+               <source media="(min-width: 1200px)" srcset="./images/working/img_desktop@1x.webp 1x, ./images/working/img_desktop@2x.webp 2x"
+               type="image/webp"/>
+               <source
+    media="(min-width: 1200px)"
+    srcset="./images/working/img_desktop@1x.jpg 1x, .images/working/img_desktop@2x.jpg 2x"
+    type="image/jpg"
+  />
+  <source
+  media="(min-width: 768px)"
+  srcset="./images/working/img_table@1x.webp 1x, ./images/working/img_table@2x.webp 2x"
+  type="image/webp"
+/>
+<source
+  media="(min-width: 768px)"
+  srcset="./images/working/img_table@1x.jpg 1x, .images/working/img_table@2x.jpg 2x"
+  type="image/jpg"
+/>
+<source
+media="(max-width: 767px)"
+srcset="./images/working/img@1x.webp 1x, ./images/working/img@2x.webp 2x"
+type="image/webp"
+/>
+<source
+  media="(max-width: 767px)"
+  srcset="./images/working/img@1x.jpg 1x, .images/working/img@2x.jpg 2x"
+  type="image/jpg"
+/>
+                <img src="./images/working/img@1x.jpg" alt="Працівник"  loading="lazy"></picture> 
         <div class="workers__div">
         <h3 class="workers__div__title">Ігор Дем'яненко</h3>
         <p lang="en" class="workers__div__text">Product Designer</p>
@@ -121,7 +155,35 @@
     </div>
             </li>
         <li class="workers__item">
-            <img src="./images/img1.jpg" alt="Працівник" width="270" height="260">
+            <picture> 
+                <source media="(min-width: 1200px)" srcset="./images/working/img_desktop1@1x.webp 1x, ./images/working/img_desktop1@2x.webp 2x"
+                type="image/webp"/>
+                <source
+     media="(min-width: 1200px)"
+     srcset="./images/working/img_desktop1@1x.jpg 1x, .images/working/img_desktop1@2x.jpg 2x"
+     type="image/jpg"
+   />
+   <source
+   media="(min-width: 768px)"
+   srcset="./images/working/img_table1@1x.webp 1x, ./images/working/img_table1@2x.webp 2x"
+   type="image/webp"
+ />
+ <source
+   media="(min-width: 768px)"
+   srcset="./images/working/img_table1@1x.jpg 1x, .images/working/img_table1@2x.jpg 2x"
+   type="image/jpg"
+ />
+ <source
+ media="(max-width: 767px)"
+ srcset="./images/working/img1@1x.webp 1x, ./images/working/img1@2x.webp 2x"
+ type="image/webp"
+ />
+ <source
+   media="(max-width: 767px)"
+   srcset="./images/working/img1@1x.jpg 1x, .images/working/img1@2x.jpg 2x"
+   type="image/jpg"
+ />
+            <img src="./images/working/img1@1x.jpg" alt="Працівник"  loading="lazy"></picture>
             <div class="workers__div">
             <h3 class="workers__div__title">Ольга Рєпіна</h3>
             <p lang="en" class="workers__div__text">Frontend Developer</p>
@@ -136,7 +198,35 @@
     </div>
         </li>
         <li class="workers__item">
-            <img src="./images/img2.jpg" alt="Працівник" width="270" height="260">
+            <picture> 
+                <source media="(min-width: 1200px)" srcset="./images/working/img_desktop2@1x.webp 1x, ./images/working/img_desktop2@2x.webp 2x"
+                type="image/webp"/>
+                <source
+     media="(min-width: 1200px)"
+     srcset="./images/working/img_desktop2@1x.jpg 1x, .images/working/img_desktop2@2x.jpg 2x"
+     type="image/jpg"
+   />
+   <source
+   media="(min-width: 768px)"
+   srcset="./images/working/img_table2@1x.webp 1x, ./images/working/img_table2@2x.webp 2x"
+   type="image/webp"
+ />
+ <source
+   media="(min-width: 768px)"
+   srcset="./images/working/img_table2@1x.jpg 1x, .images/working/img_table2@2x.jpg 2x"
+   type="image/jpg"
+ />
+ <source
+ media="(max-width: 767px)"
+ srcset="./images/working/img2@1x.webp 1x, ./images/working/img2@2x.webp 2x"
+ type="image/webp"
+ />
+ <source
+   media="(max-width: 767px)"
+   srcset="./images/working/img2@1x.jpg 1x, .images/working/img2@2x.jpg 2x"
+   type="image/jpg"
+ />
+            <img src="./images/img2@1x.jpg" alt="Працівник"  loading="lazy"></picture>
             <div class="workers__div">
             <h3 class="workers__div__title">Микола Тарасов</h3>
             <p lang="en" class="workers__div__text">Marketing</p>
@@ -151,8 +241,35 @@
         </div>
         </li>
         <li class="workers__item">
-            
-            <img src="./images/img3.jpg" alt="Працівник" width="270" height="260">
+            <picture> 
+                <source media="(min-width: 1200px)" srcset="./images/working/img_desktop3@1x.webp 1x, ./images/working/img_desktop3@2x.webp 2x"
+                type="image/webp"/>
+                <source
+     media="(min-width: 1200px)"
+     srcset="./images/working/img_desktop3@1x.jpg 1x, .images/working/img_desktop3@2x.jpg 2x"
+     type="image/jpg"
+   />
+   <source
+   media="(min-width: 768px)"
+   srcset="./images/working/img_table3@1x.webp 1x, ./images/working/img_table3@2x.webp 2x"
+   type="image/webp"
+ />
+ <source
+   media="(min-width: 768px)"
+   srcset="./images/working/img_table3@1x.jpg 1x, .images/working/img_table3@2x.jpg 2x"
+   type="image/jpg"
+ />
+ <source
+ media="(max-width: 767px)"
+ srcset="./images/working/img3@1x.webp 1x, ./images/working/img3@2x.webp 2x"
+ type="image/webp"
+ />
+ <source
+   media="(max-width: 767px)"
+   srcset="./images/working/img3@1x.jpg 1x, .images/working/img3@2x.jpg 2x"
+   type="image/jpg"
+ />
+            <img src="./images/img3@1x.jpg" alt="Працівник"  loading="lazy"></picture>
             <div class="workers__div">
             <h3 class="workers__div__title">Михайло Єрмаков</h3>
             <p lang="en" class="workers__div__text">UI Designer</p>
@@ -186,7 +303,7 @@
 
 <footer class="footer">
     <div class="container footer__container">
-        <div>
+        <div class="footer__div">
     <a class="footer__logo" href="./index.html" lang="en">Web<span class="studio">Studio</span></a>
     <address class="address">
         <ul class="adress__list">
@@ -212,9 +329,9 @@
             <label><input class="footer__input" type="email" placeholder="E-mail"></label>
             <button class="footer__button button" type="submit"><span class="footer__btn__icon">Підписатися<svg class="footer-form-icon" height="24px" width="24px"><use href="./images/icons.svg#airplane"></use></svg></span></button>
         </form>
-    </div>
+    </div> 
 </div>
-</footer>
+</footer> 
 <div class="backdrop is-hidden" data-modal>
     <div class="modal" >
 <button class="modal-btn" data-modal-close><svg class="icon-close" height="18px" width="18px"><use href="./images/icons.svg#icon-close"></use></svg></button>
@@ -248,6 +365,34 @@
 </form>
     </div>
 </div>
+<div class="menu__header js-menu-container"><button class="modal-btn js-close-menu" data-menu-button><svg class="icon__close" height="18px" width="18px"><use href="./images/icons.svg#icon-close"></use></svg></button>
+<div class="menu " id="menu-container" >
+  <li class="menu__nav__item">
+    <a class="menu__nav__link--active" href="./index.html">Студія</a>
+  </li>
+  <li class="menu__nav__item">
+    <a class="menu__nav__link" href="./portfilio.html">Портфоліо</a>
+  </li>
+  <li class="menu__nav__item">
+    <a class="menu__nav__link" href="#team">Контакти</a>
+  </li>
+  
+  <div class="menu__contact">
+    <ul class="contact__item">
+      <li class="contact__list"><a href="tel:380961111111">+38 096 111 11 11</a></li>
+      <li class="contact__list"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+      
+    </ul>
+  </div>
+  <div class="menu__social">
+    <ul class="menu__social__list"><li class="menu__social__item"><a href="#">Instagram</a></li>
+      <li class="menu__social__item"><a href="#">Twitter</a></li>
+      <li class="menu__social__item"><a href="#">Facebook</a></li>
+      <li class="menu__social__item"><a href="#">LinkedIn</a></li></ul>
+  </div>
+ </div>
+</div>
 <script src="./js/modal.js"></script>
+<script defer src="js/mobile-menu.js"></script>
 </body>
 </html>

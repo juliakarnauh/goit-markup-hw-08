@@ -1,9 +1,11 @@
 @import './utils/variables';
 @import './utils/visually-hidden';
+@import './utils/placeholders';
 
 
 @import './base/reset';
 @import './base/common';
+@import './base/card-set';
 
 @import'./components/section';
 @import'./components/btn';
@@ -26,3 +28,4 @@
 @import'./components/projects';
 @import'./components/illustration';
 @import'./components/picture';
+@import'./components/modal-header';

@@ -1,5 +1,16 @@
 .footer__icon{
-    margin-left: 70px;}
+margin-top: 60px;
+margin-bottom: 60px;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-left: 165px;
+        margin-bottom: 102px;
+        margin-top: 0;
+      }
+
+      @media screen and (min-width: 1200px) {
+        margin-left: 70px;
+        margin-bottom: 0;
+      }}
 .footer__icon__title{
     font-family:inherit;
 font-weight: 700;
@@ -11,8 +22,16 @@ color: var(--occasional-color);
 }
 .footer__icon__list{
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 10px;
     margin-top: 20px;
+    
+      @media screen and (min-width: 1200px) {
+        display: flex;
+    gap: 10px;
+    margin-top: 20px;
+      }
 }
 .footer__icon__item{
     height: 44px;

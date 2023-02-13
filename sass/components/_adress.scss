@@ -1,3 +1,7 @@
+.address{
+    min-width: 231px;
+}
+
 .adress__location{
     display: inline-block;
     text-decoration:none;
@@ -14,8 +18,11 @@ margin-top: 20px;
 font-size: 14px;
 line-height: 1.7;
 color: rgba(255, 255, 255, 0.6);
-margin-top: 9px;
+margin-top: 8px;
 transition: color var(--transition-dir);
+@media screen and (min-width: 1200px) {
+    margin-top: 9px;
+  }
 }
 .adress__link:hover,
 .adress__link:focus{

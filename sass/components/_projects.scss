@@ -1,22 +1,45 @@
+.projects{
+    @extend %section;
+   
+}
+.projects__list{
+    @media screen and (min-width: 768px) {
+        margin-bottom: 30px;
+      }
+    
+      @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
+      }
+}
 .projects__button{
     background-color:var(--background-color);
     color:var(--base-color) ;
     font-weight: 500;
-padding: 6px 23px;
+padding: 6px 22px;
 margin-right: 8px;
+margin-bottom: 15px;
 transition:background-color var(--transition-dir), color var(--transition-dir), box-shadow var(--transition-dir) ;
-
+@media screen and (max-width: 768px) {
+    margin-bottom: 15px;
+  }
 &:hover,
 &:focus{
     background-color:var(--accent-color);
     color:var(--occasional-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-}}
+}
+
+}
 .projects__list{
-display:flex;
-justify-content: center;
+    display:flex;
 background-color: var(--occasional-color);
 text-align: center;
-padding-top: 94px;
-margin-bottom: 50px;
+justify-content: center;
+@media screen and  (max-width: 767px) {
+    margin-right: auto;
+    flex-wrap: wrap;
+    justify-content: left;
+    
+    }
+    
 }
