@@ -28,13 +28,11 @@
     display: none;
   }
 }
-
-.menu-close:hover,
-.menu-close:focus {
-  background-color: rgba(0, 0, 0, 0.1);
+.menu-close__icon{
+  fill: #212121;
 }
-.menu-close:hover .menu-close__icon,
-.menu-close:focus .menu-close__icon {
+.menu-close__icon:hover,
+.menu-close__icon:focus {
   fill: var(--accent-color);
 }
 
